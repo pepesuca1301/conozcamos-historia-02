@@ -1,0 +1,81 @@
+/*(línea 21) Esto hará que se resalte el sitio ocupado por el texto*/
+
+.cuerpo {
+    /*le damos una altura máxima del 100%*/
+    max-height: 100%;
+    /*le damos un ancho del 95% de la página*/
+    max-width: 95%;
+    /*damos un margen en la parte de arriba del cuerpo*/
+    margin-top: 2%;
+    /*damos un margen al lado izquierdo*/
+    margin-left: 2.5%;
+    /*le damos un fondo de color oldlace*/
+    background: oldlace;
+}
+
+
+/*(línea 23)Todos los elementos con la etiqueta "titulo". 
+Título central: Batalla de Normandía*/
+
+.titulo {
+    /*el color de los elementos que tengan la clase "titulo"*/
+    color: #6e6e6e;
+    /*el tamaño de la fuente*/
+    font-size: 22px;
+    /*familia o tipo de la fuente*/
+    font-family: 'calibri light';
+    /*el texto se centrará*/
+    text-align: center;
+    padding-top: 2%;
+}
+
+.primer-parrafo {
+    text-align: center;
+}
+
+.cuadro-externo {
+    margin: 15px;
+    padding: 15px;
+}
+
+.cuadro-de-texto {
+    height: 250px;
+    margin: 25px;
+    padding: 25px;
+    overflow-y: scroll;
+    border-style: solid;
+}
+
+.imagen-izquierda {
+    float: left;
+    margin: 10px;
+    height: 200px;
+}
+
+.imagen-derecha {
+    float: right;
+    margin: 10px;
+    height: 200px;
+}
+
+.parrafo-derecha {
+    margin-left: 17%;
+    padding-left: 0% !important;
+    text-align: justify;
+}
+
+.parrafo-secundario-derecha {
+    margin-left: 18%;
+    padding-left: 0% !important;
+}
+
+.parrafo-izquierda {
+    margin-left: 7%;
+    padding-left: 0% !important;
+    text-align: justify;
+}
+
+.parrafo-secundario-izquierda {
+    margin-left: 18%;
+    padding-left: 0% !important;
+}

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<title>Bienvennidos a "Conozcamos Historia"</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" type="text/css" href="css/inicio.css">
+<style>
+    /**/
+    
+    .demo {
+        padding: 15px;
+        background-color: white;
+        width: 100%;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .mySlides1 {
+        padding: 15px;
+        background-color: white;
+        width: 100%;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+    }
+</style>
+
+<body background="imagenes/fondo/imagen_fondo.jpg">
+    <!--<div class="fondo">-->
+    <p style="padding-top: 20px;"></p>
+    <div style="align-items: center; display: flex; justify-content: center; width: 100%;">
+        <div style="background-color: rgb(255, 188, 112); align-items: center; display: flex; justify-content: center; max-width: 800px;">
+            <div>
+                <h2 class="w3-center">Elija uno de nuestros temas</h2>
+                <h3 class="w3-center">(Esperar 3 segundos para que pase a la siguiente imágen, dar click en esta)</h3>
+                <!--Pondremos un texto con imágenes-->
+                <a href="blogs-sgm.html ">
+                    <img class="mySlides1" src="imagenes/slider/segunda_guerra_mundial.jpg " title="SEGUNDA GUERRA MUNDIAL ">
+                </a>
+                <div class="demo">SEGUNDA GUERRA MUNDIAL<br></div>
+                <a href="blogs-vietnam.html">
+                    <img class="mySlides1 " src="imagenes/slider/guerra_vietnam.jpg " title="GUERRA DE VIETNAM ">
+                </a>
+                <div class="demo">GUERRA DE VIETNAM<br></div>
+                <a href="blogs-pgm.html">
+                    <img class="mySlides1 " src="imagenes/slider/primera_guerra_mundial.jpg " title="PRIMERA GUERRA MUNDIAL ">
+                </a>
+                <div class="demo">PRIMERA GUERRA MUNDIAL<br></div>
+                <a href="blogs-guerra-pacifico.html">
+                    <img class="mySlides1 " src="imagenes/slider/guerra_pacifico.jpg " title="LA GUERRA DEL PACIFICO ">
+                </a>
+                <div class="demo">GUERRA DEL PACÍFICO<br></div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var slideIndex = 0; //creamos una variable llamada slideIndex con un valor de 0
+        showSlides(); //creamos una función llamada showSlides
+
+        function showSlides() { //llamamos la función
+            var i; //dentro de la funcuón creamos una variable llamada i
+            var slides = document.getElementsByClassName("mySlides1 "); //creamos una variable llamada slides y este va a llmar a un elemento (s) que tengan la clase "mySlides1"
+            var texto = document.getElementsByClassName("demo"); //creamos una variable llamada texto y este va a llamar a un elemento cuya clase esa demo
+            for (i = 0; i < slides.length; i++) { //el bucle for va a repetir las siguientes instrucciones: la variable i va ser igual a 0 (hace alución al primer elemento); la variable i debe ser menor a la longitud del número de elementos que está en la varibale slides
+                slides[i].style.display = "none ";
+                texto[i].style.display = "none ";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {
+                slideIndex = 1
+            }
+            slides[slideIndex - 1].style.display = "block ";
+            texto[slideIndex - 1].style.display = "block ";
+            setTimeout(showSlides, 3000); // Cambia de imágen cada 2 segundos
+        }
+    </script>
+    <!--Footer-->
+    <link rel="stylesheet" type="text/css" href="css/estilofooter.css">
+    <footer>
+        <div class="container-footer-all">
+            <div class="container-body">
+                <div class="colum1">
+                    <h1>Más sobre nosotros</h1>
+                    <p>Somos una página enfocada en brindar información sobre datos históricos relevantes del mundo. Tratamos temas como la Historia Universal o la historia de un país en específico</p>
+                </div>
+                <div class="colum2">
+                    <h1>Redes sociales</h1>
+                    <div class="row">
+                        <img src="imagenes/instagram.jpg">
+                        <label><a class="social" href="https://www.instagram.com/pedrosuarez1301/" target="_blank">Síguenos en Instagram</a></label>
+                    </div>
+                    <div class="row">
+                        <img src="imagenes\facebook.jpg">
+                        <label><a class="social" href="https://www.facebook.com/pedroo.suarezcastillo" target="_blank">Siguenos en Facebook</a></label>
+                    </div>
+                    <div class="row">
+                        <img src="imagenes\youtube.png">
+                        <label><a class="social" href="https://www.youtube.com/channel/UCqWpqhnwZnhljnQYfc6bLJg" target="_blank">Siguenos en YouTube</a></label>
+                    </div>
+                </div>
+                <div class="colum3">
+                    <h1>Información de Contacto</h1>
+                    <div class="row2">
+                        <img src="imagenes\casa.png">
+                        <label>Calle Grau N°252 - Querecotillo</label>
+                    </div>
+                    <div class="row2">
+                        <img src="imagenes\celular.png">
+                        <label>+51 956 147 236</label>
+                    </div>
+                    <div class="row2">
+                        <img src="imagenes\correo.png">
+                        <label>1289527@senati.pe</label>
+                    </div>
+                </div>
+            </div>
+            <div class="container-footer">
+                <div class="footer">
+                    <div class="copyright">
+                        © 2021 Todos los Derechos Reservados
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
